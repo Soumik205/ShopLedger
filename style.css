@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 1;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 12px 12px 12px 38px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #a18e8e;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Style for the logo */
+.logo {
+    width: 200px;
+    /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+    /* Add margin for spacing */
+    margin-left: 1px;
+}
+
+/* The sidenav */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+/* Page content */
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+/* Style the page content to push it when the sidenav is open */
+.sidenav.open+.main {
+    margin-left: 250px;
+    /* Adjust the value as needed */
+}
+
+
+h1 {
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 30px;
+    background-color: gray;
+}
+
+
+/* Add some spacing and styling to the form elements */
+form {
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid #060303;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+label {
+    font-size: large;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+.test {
+    margin: 40px;
+}
+
+table {
+    /* border: 1px solid #060303;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 40px;
+    padding: 20px; */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+tr {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Add some hover effect to the table rows
+tr:hover {
+    background-color: #f5f5f5;
+} */
+
+button {
+    background-color: gray;
+    /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 7.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(37, 202, 37);
+}

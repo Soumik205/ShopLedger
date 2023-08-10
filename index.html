@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>ShopLedger</title>
+    </head>
+
+    <body onload="loadInventory()">
+        <!-- <nav>
+      <a href="./component/generateInvoice/invoice.html">Generate Invoice</a>
+      <a href="./component/salesReport/index.html">View Sales Report</a>
+      <a href="#" class="active">Show Inventory</a>
+    </nav> -->
+
+        <div id="mySidenav" class="sidenav">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+            > -->
+            <img src="./Images/logo.png" alt="Logo" class="logo" />
+            <a href="./component/generateInvoice/invoice.html"
+                >Generate Invoice</a
+            >
+            <a href="./component/salesReport/index.html">View Sales Report</a>
+            <a href="#" class="active">Show Inventory</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="main">
+            <!-- <button id="scanBarcodeBtn" onclick="scanBarcode()">Scan Barcode</button> -->
+            <!-- <div id="scanViewport"></div> -->
+            <h1>Welcome to ShopLedger</h1>
+            <h2>Add Product to Inventory</h2>
+            <form id="inventoryForm">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="itemName" /><br />
+                <label for="itemQuantity">Item Quantity:</label>
+                <input
+                    type="number"
+                    id="itemQuantity"
+                    name="itemQuantity"
+                /><br />
+                <label for="itemPrice">Item Price:</label>
+                <input type="number" id="itemPrice" name="itemPrice" /><br />
+                <button type="button" onclick="addItem()">Add Item</button>
+            </form>
+
+            <h2>Your Current Inventory</h2>
+            <div class="test">
+                <table id="inventoryTable">
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Item Quantity</th>
+                        <th>Item Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script defer src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+    </body>
+</html>
